@@ -17,5 +17,12 @@ pipeline {
                 '''
             }
         }
+        stage ('test') {
+            steps {
+                sh '''
+                whoami
+                '''
+            }
+        }
     }
 }
